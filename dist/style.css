@@ -62,6 +62,7 @@ a:active {
   --join-card-clr: hsl(0, 0%, 100%);
   --subscription-card-clr: hsl(179, 81%, 34%);
   --why-us-card-clr: hsl(179, 62%, 43%);
+  --join-txt-clr: hsl(179, 81%, 34%);
   --txt-clr: hsl(0, 0%, 96%);
   --head-txt-clr: hsl(0, 0%, 100%);
   --sub-txt-clr: hsl(240, 2%, 90%);
@@ -102,6 +103,9 @@ h2 {
 
 .join-our-community {
   background-color: var(--join-card-clr);
+}
+.join-our-community h2 {
+  color: var(--join-txt-clr);
 }
 .join-our-community .guarantee {
   margin-bottom: 1.5rem;

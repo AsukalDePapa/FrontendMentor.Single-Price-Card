@@ -39,6 +39,10 @@ h2 {
 .join-our-community {
     background-color: var(--join-card-clr);
 
+    h2 {
+        color: var(--join-txt-clr);
+    }
+
     .guarantee {
         margin-bottom: f.rem(24);
         line-height: 1.3;
