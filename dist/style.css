@@ -1,0 +1,247 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: inherit;
+  vertical-align: center;
+}
+
+body {
+  -webkit-font-smoothin: antialiased;
+  line-height: 1.3;
+  font-family: "Karla", sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --bg: hsl(204, 43%, 93%);
+  --join-card-clr: hsl(0, 0%, 100%);
+  --subscription-card-clr: hsl(179, 62%, 43%);
+  --why-us-card-clr: hsl(179, 60%, 50%);
+  --txt-clr: hsl(0, 0%, 96%);
+  --head-txt-clr: hsl(0, 0%, 100%);
+  --sub-txt-clr: hsl(240, 2%, 90%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --link-clr: hsl(179, 62%, 43%);
+}
+
+body {
+  position: relative;
+  display: grid;
+  place-content: center;
+  background-color: var(--bg);
+  padding: 100px 0;
+}
+
+main {
+  margin-inline: auto;
+  width: min(100%, 23.125rem);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  place-content: center;
+  grid-template-areas: "join" "subscription" "whyUs";
+}
+@media (min-width: 45em) {
+  main {
+    width: min(100%, 45rem);
+    grid-template-columns: auto;
+    grid-template-areas: "join join" "subscription whyUs";
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.join-our-community {
+  background-color: var(--join-card-clr);
+}
+.join-our-community .guarantee {
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+.join-our-community .description {
+  line-height: 1.7;
+  color: hsl(218deg, 22%, 67%);
+}
+@media (min-width: 45em) {
+  .join-our-community {
+    padding-right: 100px;
+  }
+  .join-our-community .guarantee {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .join-our-community .description {
+    font-size: 1.0625rem;
+  }
+}
+
+.subscription {
+  background-color: var(--subscription-card-clr);
+}
+.subscription h2 {
+  color: var(--txt-clr);
+}
+.subscription .price {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 2rem;
+  margin-bottom: 0.875rem;
+  color: var(--head-txt-clr);
+}
+.subscription .price span {
+  font-size: 1rem;
+  color: var(--sub-txt-clr);
+  letter-spacing: 1px;
+}
+@media (min-width: 45em) {
+  .subscription .price {
+    font-size: 2.25rem;
+  }
+}
+.subscription p {
+  color: var(--txt-clr);
+  margin-bottom: 2rem;
+}
+@media (min-width: 45em) {
+  .subscription p {
+    font-size: 1.125rem;
+  }
+}
+.subscription button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--txt-clr);
+  background-color: var(--bright-yellow);
+  font-size: 1.125rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.why-us {
+  background-color: var(--why-us-card-clr);
+}
+.why-us h2 {
+  color: var(--txt-clr);
+}
+.why-us p {
+  color: var(--sub-txt-clr);
+  line-height: 1.5;
+}
+
+article:nth-child(1) {
+  grid-area: join;
+}
+
+article:nth-child(2) {
+  grid-area: subscription;
+}
+
+article:nth-child(3) {
+  grid-area: whyUs;
+}
+
+.padding-all {
+  padding: 2rem;
+}
+@media (min-width: 45em) {
+  .padding-all {
+    padding: 3rem;
+  }
+}
+
+.bright-yellow {
+  color: var(--bright-yellow);
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+footer {
+  position: absolute;
+  bottom: 3%;
+  right: 0;
+  left: 0;
+}
+
+.attribution {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--link-clr);
+  position: relative;
+}
+.attribution a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  width: 0;
+  height: 2px;
+  background-color: var(--link-clr);
+  transition: all 0.3s ease-in-out;
+}
+.attribution a:hover::after {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
