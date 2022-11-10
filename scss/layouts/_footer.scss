@@ -1,0 +1,36 @@
+@use '../utils/functions' as f;
+
+footer {
+    position: absolute;
+    bottom: 3%;
+    right: 0;
+    left: 0;
+}
+
+.attribution { 
+    font-size: f.rem(14); 
+    text-align: center; 
+}
+.attribution a {
+    font-size: f.rem(15);
+    font-weight: 700;
+    color: var(--link-clr);
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-inline: auto;
+        width: 0;
+        height: 2px;
+        background-color: var(--link-clr);
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
