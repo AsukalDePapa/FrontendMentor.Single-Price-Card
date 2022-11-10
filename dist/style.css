@@ -60,8 +60,8 @@ a:active {
 :root {
   --bg: hsl(204, 43%, 93%);
   --join-card-clr: hsl(0, 0%, 100%);
-  --subscription-card-clr: hsl(179, 62%, 43%);
-  --why-us-card-clr: hsl(179, 60%, 50%);
+  --subscription-card-clr: hsl(179, 81%, 34%);
+  --why-us-card-clr: hsl(179, 62%, 43%);
   --txt-clr: hsl(0, 0%, 96%);
   --head-txt-clr: hsl(0, 0%, 100%);
   --sub-txt-clr: hsl(240, 2%, 90%);
